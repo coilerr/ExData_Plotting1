@@ -1,6 +1,3 @@
-Sys.setenv("http_proxy" = "http://www-proxy.ivi.admin.ch:8080") 
-
-Sys.setenv("https_proxy" = "http://www-proxy.ivi.admin.ch:8080")#proxy to circumvent the BIT for HTTPS
 
 powerconsumption<-read.delim("household_power_consumption.txt",sep = ";",na.strings = "?")
 library(dplyr)
