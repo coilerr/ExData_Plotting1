@@ -1,5 +1,6 @@
 powerconsumption<-read.delim("household_power_consumption.txt",sep = ";",na.strings = "?")
 library(dplyr)
+library(tidyverse)
 library(lubridate)
 powerconsumption$Date<- as.character(powerconsumption$Date)
 powerconsumption$Date<-dmy(powerconsumption$Date)
